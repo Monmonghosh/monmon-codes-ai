@@ -37,6 +37,17 @@ export const education = [
 
 export const internships = [
   {
+    org: "National Institute of Technology, Agartala",
+    role: "Intern",
+    period: "1 June 2026 – 21 July 2026",
+    responsibilities: [
+      "Working on assigned technical project tasks in an academic research environment",
+      "Applying programming and problem-solving skills under faculty guidance",
+    ],
+    tech: ["Python", "C/C++", "Research"],
+    outcome: "Deeper hands-on exposure to structured technical project work.",
+  },
+  {
     org: "Indian Oil Corporation Ltd — Guwahati Refinery",
     role: "Intern",
     period: "1 January 2026 – 30 January 2026",
