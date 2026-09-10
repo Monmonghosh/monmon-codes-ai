@@ -251,7 +251,7 @@ export function Skills() {
         <SectionHeading eyebrow="Skills" title="Technical & professional skills" />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group, i) => {
-            const Icon = skillIcons[i % skillIcons.length];
+            const Icon = skillIcons[i % skillIcons.length] ?? Code2;
             return (
               <Reveal key={group.title} delay={i * 70}>
                 <article className="glass-card h-full p-6">
