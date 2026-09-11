@@ -457,7 +457,7 @@ export function Languages() {
           {languages.map((l, i) => (
             <Reveal key={l} delay={i * 80}>
               <span className="glass-card inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold">
-                <Languages2 size={16} className="text-primary" />
+                <LanguagesIcon size={16} className="text-primary" />
                 {l}
               </span>
             </Reveal>
