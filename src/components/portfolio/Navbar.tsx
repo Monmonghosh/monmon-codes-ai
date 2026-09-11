@@ -74,7 +74,17 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="mt-2">
+              <a
+                href="#contact"
+                onClick={() => setOpen(false)}
+                className="block rounded-xl bg-primary px-3 py-2.5 text-center text-sm font-semibold text-primary-foreground"
+              >
+                Let's Connect
+              </a>
+            </li>
           </ul>
+
         </div>
       ) : null}
     </header>
