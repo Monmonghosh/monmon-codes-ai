@@ -649,7 +649,6 @@ export function Footer() {
             { icon: Github, href: profile.github || "#contact", label: "GitHub" },
           ].map(({ icon: Icon, href, label }) => (
 
-          ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
               href={href}
