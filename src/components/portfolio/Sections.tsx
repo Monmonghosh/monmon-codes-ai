@@ -19,14 +19,19 @@ import {
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
 import {
+  aboutHighlights,
   certifications,
   education,
   expertise,
+  heroTechLabels,
   internships,
+  languages,
   profile,
   projects,
+  services,
   skillGroups,
 } from "./data";
+
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
