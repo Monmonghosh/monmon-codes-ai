@@ -526,6 +526,13 @@ export function Contact() {
                   { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
                   { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone}` },
                   { icon: Linkedin, label: "LinkedIn", value: "monmon-ghosh", href: profile.linkedin },
+                  {
+                    icon: Github,
+                    label: "GitHub",
+                    value: profile.github || "Add your GitHub link",
+                    href: profile.github || "#contact",
+                  },
+
                 ].map(({ icon: Icon, label, value, href }) => (
                   <li key={label}>
                     <a
