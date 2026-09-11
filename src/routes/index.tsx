@@ -46,9 +46,13 @@ function Index() {
         <Experience />
         <Skills />
         <Projects />
+        <Services />
         <Certifications />
         <Expertise />
+        <Languages />
         <Contact />
+        <CallToAction />
+
       </main>
       <Footer />
     </div>
