@@ -172,6 +172,17 @@ export function About() {
             translation device or better data for speech systems.
           </p>
         </Reveal>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {aboutHighlights.map((h, i) => (
+            <Reveal key={h.value} delay={i * 70}>
+              <div className="glass-card h-full p-5 text-center">
+                <p className="text-base font-extrabold text-gradient">{h.value}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{h.label}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
       </div>
     </section>
   );
