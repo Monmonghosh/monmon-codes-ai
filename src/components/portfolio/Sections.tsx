@@ -413,6 +413,82 @@ export function Expertise() {
   );
 }
 
+const serviceIcons = [Layers, Code2, Brain, Cpu, Sparkles, Wrench];
+
+export function Services() {
+  return (
+    <section id="services" className="section-pad bg-surface/40">
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <SectionHeading
+          eyebrow="Services"
+          title="What I can do"
+          description="Technical capabilities I can contribute to internships, teams and student projects."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((s, i) => {
+            const Icon = serviceIcons[i % serviceIcons.length] ?? Code2;
+            return (
+              <Reveal key={s.title} delay={i * 70}>
+                <article className="glass-card h-full p-6">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl border border-border bg-surface-2 text-primary">
+                    <Icon size={18} />
+                  </span>
+                  <h3 className="mt-4 text-base font-bold">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+                </article>
+              </Reveal>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function Languages() {
+  return (
+    <section className="pb-4">
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <SectionHeading eyebrow="Languages" title="Languages I speak" />
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          {languages.map((l, i) => (
+            <Reveal key={l} delay={i * 80}>
+              <span className="glass-card inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold">
+                <Languages2 size={16} className="text-primary" />
+                {l}
+              </span>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function CallToAction() {
+  return (
+    <section className="section-pad">
+      <div className="mx-auto max-w-4xl px-5 lg:px-8">
+        <Reveal>
+          <div className="glass-card grid-backdrop relative overflow-hidden p-10 text-center">
+            <div className="pointer-events-none absolute -top-16 left-1/2 h-52 w-52 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
+            <h2 className="relative text-2xl font-extrabold sm:text-3xl">
+              Let's build something <span className="text-gradient">innovative</span> together.
+            </h2>
+            <a
+              href="#contact"
+              className="relative mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Contact Me <ArrowRight size={16} />
+            </a>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+
 export function Contact() {
   const [sent, setSent] = useState(false);
 
