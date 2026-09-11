@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/portfolio/Navbar";
 import {
   About,
+  CallToAction,
   Certifications,
   Contact,
   Education,
@@ -9,9 +10,12 @@ import {
   Expertise,
   Footer,
   Hero,
+  Languages,
   Projects,
+  Services,
   Skills,
 } from "@/components/portfolio/Sections";
+
 
 const title = "Monmon Ghosh | CSE Student Portfolio";
 const description =
@@ -42,9 +46,13 @@ function Index() {
         <Experience />
         <Skills />
         <Projects />
+        <Services />
         <Certifications />
         <Expertise />
+        <Languages />
         <Contact />
+        <CallToAction />
+
       </main>
       <Footer />
     </div>
