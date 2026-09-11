@@ -627,11 +627,28 @@ export function Footer() {
           <p className="text-base font-bold">{profile.name}</p>
           <p className="mt-1 text-sm text-muted-foreground">{profile.role}</p>
         </div>
+        <ul className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+          {[
+            { label: "Home", href: "#home" },
+            { label: "About", href: "#about" },
+            { label: "Projects", href: "#projects" },
+            { label: "Contact", href: "#contact" },
+          ].map((l) => (
+            <li key={l.href}>
+              <a href={l.href} className="transition-colors hover:text-primary">
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
         <div className="flex justify-center gap-3">
           {[
             { icon: Linkedin, href: profile.linkedin, label: "LinkedIn" },
             { icon: Mail, href: `mailto:${profile.email}`, label: "Email" },
             { icon: Phone, href: `tel:${profile.phone}`, label: "Phone" },
+            { icon: Github, href: profile.github || "#contact", label: "GitHub" },
+          ].map(({ icon: Icon, href, label }) => (
+
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
