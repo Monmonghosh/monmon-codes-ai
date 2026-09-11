@@ -5,6 +5,9 @@ import {
   Brain,
   Briefcase,
   Code2,
+  Github,
+  Languages as LanguagesIcon,
+
   Cpu,
   Database,
   GraduationCap,
