@@ -100,11 +100,23 @@ export function Hero() {
                 MG
               </div>
             </div>
-            <p className="mt-4 text-center text-xs text-muted-foreground">
-              Adamas University · B.Tech CSE · 2023–2027
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {heroTechLabels.map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-border bg-surface-2/70 px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
+            <p className="mt-4 flex items-center justify-center gap-2 text-center text-xs text-muted-foreground">
+              <span className="h-2 w-2 rounded-full bg-primary" />
+              {profile.status}
             </p>
           </div>
         </Reveal>
+
       </div>
     </section>
   );
