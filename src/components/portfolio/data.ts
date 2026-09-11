@@ -7,7 +7,30 @@ export const profile = {
   email: "monmonghosh18@gmail.com",
   phone: "9436588695",
   linkedin: "https://linkedin.com/in/monmon-ghosh-386950290",
+  // Placeholder — replace with the real GitHub profile URL when available
+  github: "",
+  status: "Currently pursuing B.Tech CSE • Graduation 2027",
 };
+
+export const heroTechLabels = ["Python", "C++", "AI", "ML", "Computer Vision", "Web Development"];
+
+export const aboutHighlights = [
+  { value: "B.Tech CSE", label: "Adamas University" },
+  { value: "2027", label: "Expected Graduation" },
+  { value: "Multiple Internships", label: "Industry Exposure" },
+  { value: "Technical Projects", label: "AI • Software • Technology" },
+];
+
+export const languages = ["English", "Hindi"];
+
+export const services = [
+  { title: "Web Development", body: "Build clean, responsive and modern websites." },
+  { title: "Python Development", body: "Develop Python-based applications, automation and software projects." },
+  { title: "AI & Machine Learning", body: "Create AI/ML-based solutions and prototypes." },
+  { title: "Computer Vision", body: "Develop computer vision applications using image and video processing." },
+  { title: "UI/UX Design", body: "Create clean, intuitive and user-friendly digital interfaces." },
+  { title: "Software & Project Development", body: "Build academic, prototype and software-based projects." },
+];
 
 export const navLinks = [
   { label: "Home", href: "#home" },
@@ -16,9 +39,11 @@ export const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Services", href: "#services" },
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
+
 
 export const education = [
   {
