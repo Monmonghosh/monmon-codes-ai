@@ -7,8 +7,7 @@ export const profile = {
   email: "monmonghosh18@gmail.com",
   phone: "9436588695",
   linkedin: "https://linkedin.com/in/monmon-ghosh-386950290",
-  // Placeholder — replace with the real GitHub profile URL when available
-  github: "",
+  github: "https://github.com/Monmonghosh",
   status: "Currently pursuing B.Tech CSE • Graduation 2027",
 };
 
